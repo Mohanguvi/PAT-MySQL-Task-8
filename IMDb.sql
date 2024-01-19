@@ -155,7 +155,7 @@ VALUES
     (2, 3),
     (3, 4),
     (4, 5);
-    
+-- Movie with Multiple Genre    
 SELECT Movie.Title, Genre.genre_name
 FROM 
 	Movie
@@ -167,7 +167,7 @@ JOIN
 	Genre 
 ON 
 	Movie_Genre.Genre_ID = Genre.Genre_ID;
-
+-- Movie with mutliple reviews
 SELECT Movie.Title, Review.User_comment, Review.Rating
 FROM 
 	Movie
@@ -179,7 +179,7 @@ JOIN
 	Review 
 ON 
 	Movie_review.Review_ID = Review.Review_ID;
-
+-- Artist having multiple role
 SELECT Movie.Title, Artist_Skill.Artist_name, Artist_roles.Role_name
 FROM 
 	Movie
